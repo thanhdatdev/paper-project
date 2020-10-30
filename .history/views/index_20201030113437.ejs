@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Papers
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <center>
+        <h2>Danh mục các thông báo</h2>
+    </center>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên bài báo</th>
+            <th>Tên nhóm tác giả</th>
+            <th>Chỉ số ISBN</th>
+            <th>Số trang</th>
+            <th>Năm xuất bản</th>
+        </tr>
+        <tbody>
+            <% for(var i = 0; i < datas.length; i++) { %>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        <%= datas[i].name_paper %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>

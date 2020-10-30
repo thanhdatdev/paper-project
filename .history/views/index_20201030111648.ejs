@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Papers
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <center>
+        <h2>Danh mục các thông báo</h2>
+    </center>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên bài báo</th>
+            <th>Tên nhóm tác giả</th>
+            <th>Chỉ số ISBN</th>
+            <th>Số trang</th>
+            <th>Năm xuất bản</th>
+        </tr>
+        <tr>
+            <% for(var i = 0; i < _uG.length; i++) { %>
+                <td>1</td>
+                <td>
+                    <td>
+                        <td class="sorting_1">
+                            <%= _uG[i].name_paper.S %>
+                        </td>
+                        <td>
+                            <%= _uG[i].name_author.S %>
+                        </td>
+                        <td>
+                            abc
+                        </td>
+                    </td>
+                </td>
+        </tr>
+    </table>
+</body>
+
+</html>
